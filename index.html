@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+
+        body
+        {
+            background-color: #111022;
+            font-family: "Jersey 15", sans-serif;
+        }
+
+        #cuerponuevo
+        {
+            /*background-image: linear-gradient(#2E056B, #A914E4, #8906DA);*/
+            /*background-image: linear-gradient(#190249, #6505C1, #5D08BD);*/
+            background-image: 
+        url("https://www.transparenttextures.com/patterns/grid-me.png"),
+        linear-gradient(#190249, #6505C1, #5D08BD);
+        background-blend-mode: soft-light; /* o overlay, soft-light, etc. */
+            border: 2px solid #803ACF;
+            max-width: 1200px;
+        }
+
+
+        #titulo
+        {
+            color: #FFFFFF;
+            font-size: 150px;
+        }
+
+        header
+        {
+            border: 2px solid white;
+            background-image: url(img/Headear2-levelup.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+/*----------------Esto de acá es para las barras de progreso que están por todos lados :D-------------*/
+        .progress
+        {
+            background-color: transparent ;
+            border: 2px solid white;
+            height: 2rem;    
+        }
+
+        .progress .progress-bar
+        {
+            background-color: white;
+        }
+
+/*----------------Esto de acá es para las barras de progreso que están por todos lados :D-------------*/
+
+        h2, h3{
+            color: #FFFFFF;
+        }
+
+        h3{
+            font-size: 30px;
+        }
+
+        
+
+        /*---------------------------------Resumen------------------------------------------------*/
+
+        .fondoperfil
+        {
+            background-color: rgba(255, 255, 255, 0.5);
+            
+        }
+
+        .prota
+        {
+            color: #FC96FB;   
+        }
+
+        #intereses
+        {
+            background-color: rgba(66, 36, 132, 0.5);
+            border: 2px solid rgba(128,58, 207, 0.8);;
+            border-style: dotted;
+
+        }
+
+        #interesimg
+        {
+            background-color: rgba(66, 36, 132, 0.7);
+            border: 2px solid rgba(128,58, 207, 0.5);
+            border-style: dotted;
+background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+           /* display: flex;
+            justify-content: center;
+            align-items: center;*/
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        
+        .inti
+        {
+
+            width: 22%;
+        }
+
+        #tarjeta
+        {
+            background-color: rgba(128,58, 207, 0.5);
+            border: 1px solid #FEFDFF;
+            display: inline-block;
+            
+        }
+
+        .profe
+        {
+            font-size: 30px;
+        }
+
+        p{
+            color: white;
+            font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+        }
+
+        .presentacion{
+
+             max-width: 60%;
+        }
+   
+
+        /*---------------------------------Resumen------------------------------------------------*/
+
+        /*---------------------------------skills---------------------------------------------*/
+
+        #skilltitle
+        {
+            color: white;
+            font-size: 50px;
+        }
+
+        .progress.progress-sm {
+        background-color: transparent;
+        border: 2px solid white;
+        height: 1rem;
+        /* Centrado del bloque */
+
+        
+        margin-right: auto;
+
+      
+        }
+
+        .progress.progress-sm .progress-bar {
+        background-color: #FF3646;
+        }
+
+       .circle-bg {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(17, 16, 34, 0.5);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        #skill
+        {
+            border: 1px solid #FEFDFF;
+            /*background-color: rgba(128,58, 207, 0.3);*/
+            background-color: rgba(56, 4, 125, 0.5);
+        }
+
+
+        
+        /*---------------------------------skills---------------------------------------------*/
+
+
+        #neon-line {
+      display: block;
+      margin: 2rem auto;
+      width: 80%;
+      height: 8px;
+    }
+
+    /*CAMBIO 1 de Monica*/
+
+
+     
+
+
+    /*Tablet*/
+    @media (max-width: 768px){
+        #titulo
+        {
+            color: #FFFFFF;
+            font-size: 60px;
+        }
+        
+        .inti {
+
+            width: 15%;
+        }
+
+        .presentacion{
+
+             max-width: 80%;
+        }
+   
+        
+    }
+
+    /*Telefono*/
+    @media (max-width: 576px){
+         #titulo
+        {
+            color: #FFFFFF;
+            font-size: 40px;
+        }
+
+        #skilltitle{
+          font-size: 30px;
+        }
+
+        .inti{
+
+            width: 22%;
+        }
+
+         .presentacion{
+
+             max-width: 90%;
+        }
+
+        #saludo{
+
+            font-size: 20px;
+        }
+
+    }
+
+
+    </style>
+</head>
+
+
+<body class="d-flex justify-content-center min-vh-100">
+
+    <div id="cuerponuevo" class="container p-4 rounded"> <!--Este es el que hace que no se mueste el contenido en todo lado hermano-->
+
+<!-----------------------------header---------------------------------------------------------------->
+
+<header class="rounded p-5">
+
+    <div class="row">
+        <!--Título: Portafolio en letra game :D centrado en el row-->
+        <h1 id="titulo" class="text-center display-1 display-md-3 display-sm-4">PORTAFOLIO</h1>
+    </div>
+
+    <div class="row justify-content-center">
+        <!--Progress bar blanca centrado en el row-->
+        <div class="col-6">
+            <div class="progress">
+                <div class="progress-bar" style="width: 40%;"></div>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<!-----------------------------header------------------------------------------------------------------>
+
+<!--<hr>-->
+
+<hr class="my-4" style="border-top: 1px solid white;">
+
+
+<!-----------------------------Resume----------------------------------------------------------------->
+
+<div class="rounded p-5 d-flex justify-content-center"> <!--Contenedor-->
+
+  <div id="tarjeta" class="p-4 rounded mb-4" style="max-width: 650px;">
+    <!-- w-100 para que respete ancho responsivo y max-width para no salirse -->
+
+    <div class="d-flex flex-column flex-md-row gap-4 align-items-start">
+      
+      <!-- Columna izquierda -->
+      <div id="columnaizquierda" class="d-flex flex-column align-items-center mx-auto mx-md-0" style="flex: 0 0 260px;">
+        <div class="fondoperfil rounded mb-3">
+          <img src="img/perfil2.png" class="img-fluid d-block mx-auto" alt="" style="width: 80%;">
+        </div>
+
+        <h2>Age:</h2>
+        <div style="display: flex; align-items: center;">
+          <div class="progress" style="flex-grow: 1; margin-right: 10px; width: 190px;">
+            <div class="progress-bar" style="width: 40%;"></div>
+          </div>
+          <h3 style="margin: 0;">30%</h3>
+        </div>
+      </div>
+
+      <!-- Columna derecha -->
+      <div id="columnaderecha" class="d-flex flex-column" style="flex: 1 1 auto; min-width: 0; ">
+
+        <div class="mb-4">
+          <h1 class="prota text-md-start text-sm-center text-center">John Wick Luna</h1>
+          <h2 class="profe text-md-start text-sm-center text-center">Ingeniero en ciencias</h2>
+          <h2 class="profe text-md-start text-sm-center text-center">de la computación</h2>
+        </div>
+
+        <div>
+          <h2 class="text-center"  id="intereses">Intereses</h2>
+          <div id="interesimg" style="height: 100px; ">
+            <img src="img/disco-ball.png" class="inti img-fluid m-2 " alt="" >
+            <img src="img/camera.png"  class="inti img-fluid m-2 " alt="" >
+            <img src="img/pizza.png"  class="inti img-fluid m-2" alt="" >
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+<!--Parte del texto :D-->
+
+<div class="rounded d-flex justify-content-center"> <!--Contenedor-->
+
+<div class="presentacion text-center">
+    <h2 id="saludo">System.out.println("Hello, World!");</h2>
+    <p>Soy Ingeniero en Ciencias de la Computación con una pasión constante por leer, investigar y resolver problemas. Disfruto tanto del frontend como del backend, porque me gusta ver cómo las ideas se convierten en experiencias reales y funcionales. Me motiva la acción, los retos y todo lo que implique aprender haciendo</p>
+    <p>Me interesa mantenerme actualizado con nuevas tecnologías y enfoques de desarrollo, y suelo sumergirme en artículos, documentación y proyectos experimentales para mejorar mis habilidades. Una de las dificultades que enfrento es saber cuándo dejar de perfeccionar un proyecto: a veces me pierdo en los detalles, buscando siempre optimizar o probar una idea más. Aun así, esta obsesión por mejorar es también lo que me impulsa a crecer cada día como desarrollador.</p>
+</div>
+
+</div>
+
+<!--Parte del texto :D-->
+
+<!-----------------------------Resume----------------------------------------------------------------->
+
+<!--<hr>-->
+
+<hr class="my-4" style="border-top: 1px solid white;">
+
+
+<!-----------------------------skills--------------------------------------------------------------->
+
+<div class="container rounded p-5" id="skill">
+
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center" id="skilltitle">Choose your skill</h1>
+        </div>
+    </div>
+
+
+<div class="rounded d-flex justify-content-center"> <!--Contenedor-->
+
+    <div class="row">
+
+        <div class="col-12 col-sm-12 col-md-4 mb-5 mb-md-0">
+            <div class="circle-bg mx-auto mb-2">
+            <img src="img/gambling.png" id="ic1" class="img-fluid d-block mx-auto" alt="" style="width: 55%;">
+            </div>
+            <h3 class="text-center">C#</h3>
+
+            <!--Nueva estructura-->
+            <div class="d-flex align-items-center justify-content-center gap-2"> <!-- contenedor flex -->
+            <!-- Imagen al lado -->
+            <img src="img/love-always-wins.png" alt="icono" style="width: 30px; height: 30px;">
+
+            <!-- Barra de progreso -->
+            <div class="progress progress-sm mx-auto" style="flex-grow: 1; margin-right: 10px; width: 190px;">
+                <div class="progress-bar" style="width: 80%;">
+                    80%
+                </div>
+            </div>
+
+            </div>
+            <!--hasta estructura de barra-->
+  
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 mb-5 mb-md-0">
+            <div class="circle-bg mx-auto mb-2">
+            <img src="img/website.png" id="ic2" class="img-fluid d-block mx-auto" alt="" style="width: 50%;">
+            </div>
+            <h3 class="text-center">HTML5</h3>
+
+            <!--Nueva estructura-->
+            <div class="d-flex align-items-center justify-content-center gap-2"> <!-- contenedor flex -->
+            <!-- Imagen al lado -->
+            <img src="img/love-always-wins.png" alt="icono" style="width: 30px; height: 30px;">
+
+            <!-- Barra de progreso -->
+            <div class="progress progress-sm mx-auto" style="flex-grow: 1; margin-right: 10px; width: 190px;">
+                <div class="progress-bar" style="width: 40%;">
+                    40%
+                </div>
+            </div>
+
+            </div>
+            <!--hasta estructura de barra-->
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 mb-5 mb-md-0">
+            <div class="circle-bg mx-auto mb-2">
+            <img src="img/database.png" id="ic3" class="img-fluid d-block mx-auto" alt="" style="width:55%;">
+            </div>
+            <h3 class="text-center">SQL</h3>
+
+            <!--Nueva estructura-->
+            <div class="d-flex align-items-center justify-content-center gap-2"> <!-- contenedor flex -->
+            <!-- Imagen al lado -->
+            <img src="img/love-always-wins.png" alt="icono" style="width: 30px; height: 30px;">
+
+            <!-- Barra de progreso -->
+            <div class="progress progress-sm mx-auto" style="flex-grow: 1; margin-right: 10px; width: 190px;">
+                <div class="progress-bar" style="width: 100%;">
+                    100%
+                </div>
+            </div>
+
+            </div>
+            <!--hasta estructura de barra-->
+        </div>
+
+    </div>
+
+
+</div>
+
+</div>
+<!-----------------------------skills--------------------------------------------------------------->
+
+<!--<hr>-->
+
+<!-----------------------------footer--------------------------------------------------------------->
+
+<footer>
+<!-- Línea con efecto neón -->
+  <canvas id="neon-line"></canvas>
+</footer>
+
+
+<!-----------------------------footer-------------------------------------------------------------->
+    </div>
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    const canvas = document.getElementById("neon-line");
+    const ctx = canvas.getContext("2d");
+
+    // Ajustar tamaño del canvas al ancho real mostrado
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+
+    // Coordenadas
+    const startX = 0;
+    const endX = canvas.width;
+    const y = canvas.height / 2;
+
+    // Estilo de línea
+    ctx.beginPath();
+    ctx.moveTo(startX, y);
+    ctx.lineTo(endX, y);
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "#ffaeff"; // color blanco
+    ctx.shadowColor = "#db0ae1"; // resplandor blanco
+    ctx.shadowBlur = 10;
+    ctx.stroke();
+  </script>
+
+</body>
+</html>
